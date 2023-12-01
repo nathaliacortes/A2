@@ -432,12 +432,7 @@
       
         }
         
-    .product2 img {
-      margin-top: 20px;
-      width: 100%;
-  height: auto;
-  max-width: 100%;
-        }
+    
 
     .product-pencil1 {
       position: absolute;
@@ -454,7 +449,7 @@
     .product-pencil1 h1 {
       font-size: 4rem;
       margin-bottom: 20px;
-      color: black;
+      color: rgb(255, 255, 255);
       padding: 20PX;
       }
 
@@ -500,11 +495,7 @@
         align-items: center;
         padding: 10px;
       }
-      section.product-pencil1-b img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        }
+     
       
       .product-pencil1-b h1 {
         font-size: 4rem;
@@ -542,7 +533,7 @@
         }
         .product-pencil1-c {
           position: absolute;
-          top: 150px;
+          top: 100px;
           left: 0;
           width: 100%;
           display: flex;
@@ -554,9 +545,29 @@
         
         .product-pencil1-c h1 {
           font-size: 2.5rem;
-          margin-bottom: 20px;
-          color: white;
-          padding: 20px;
+          margin-bottom: 10px;
+          color: rgb(255, 255, 255);
+          padding: 10px;
+          text-align: center;
+        }
+
+        .product-pencil1-c2 {
+          position: absolute;
+          top: 100px;
+          left: 0;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+        }
+
+        .product-pencil1-c2 h1 {
+          font-size: 2.5rem;
+          margin-bottom: 10px;
+          color: rgb(0, 0, 0);
+          padding: 10px;
           text-align: center;
         }
 
@@ -567,7 +578,7 @@
           margin: 0;
         }
         .optionspencil1-c div {
-          margin: 80px; 
+          margin: 70px; 
           text-align: center;
           width: 40%;
         }
@@ -756,10 +767,51 @@
           }
           
           model-viewer {
-            width: 80%; /* Adjust the width as needed */
-            height: 80vh; /* Adjust the height as needed */
-            max-width: 800px; /* Adjust the maximum width as needed */
-            max-height: 600px; /* Adjust the maximum height as needed */
+            width: 80%; 
+            height: 80vh;
+            max-width: 800px;
+            max-height: 600px; 
           }
       
-  
+          .Hotspot {
+            width: 20px; /* Tamaño del área de interacción */
+            height: 20px;
+            background: none; /* Sin fondo */
+            border: 2px solid #fff; /* Borde blanco de 2 píxeles */
+            border-radius: 50%; /* Hace que el borde sea redondeado */
+            position: absolute;
+            cursor: pointer;
+        }
+
+          .HotspotAnnotation {
+            background-color: #fff; /* Set the background color */
+            color: #333; /* Set the text color */
+            padding: 10px; /* Add padding around the content */
+            border: 2px solid #ccc; /* Add a border */
+            border-radius: 15px; /* Add rounded corners */
+            position: absolute; /* Position it absolutely within its parent */
+            top: 50%; /* Center it vertically */
+            left: 50%; /* Center it horizontally */
+            transform: translate(-50%, -50%); /* Adjust for centering */
+            display: none; /* Initially hide it, you can change this based on your requirements */
+        }
+        
+        .Hotspot:hover .HotspotAnnotation {
+            display: block; /* Show the annotation when the hotspot is hovered */
+        }
+
+        section.productglb1 {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 1px;
+          margin-top: 75px;
+         padding: 0;
+          }
+             
+          section.productglb1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }

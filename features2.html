@@ -7,6 +7,7 @@
         <meta name="description" content="Naty Furniture Inc.">
         <title>Naty Furniture Inc.</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
     </head>
 
     <body class="pencil1">
@@ -33,7 +34,7 @@
             <section class="container">
 
                 <div class="title1">
-                    <h2>Pencil 2</h2>
+                    <h2>Futura</h2>
                     <button class="btn-buy">Buy</button>
                 </div>
 
@@ -42,28 +43,42 @@
             <section class="product2">
 
                 <div class="product-pencil1">
-                    <h1>Pencil 2</h1>
-                    <h2>Pencil it in and make it happen!</h2>
+                    <h1>Futura Chair</h1>
+                    <h2>Sketch your style, we'll make it real!</h2>
                 </div>
-                <img src="img/silverpen.png" alt="Pen1">
+                <img src="img/Futura.png" alt="Pen1">
 
             </section>
             
             <section class="optionspencil1">
 
                 <div>
-                    <h1>Experience razor-sharp precision. <br>Perfectly precise every time.<br> Write with laser-like accuracy.<br>  Never lose your edge<br> with our auto-sharpening pencil.</h1>
+                    <h1>Discover flawless craftsmanship.<br>Exquisite precision, every piece.<br>Furnish with meticulous accuracy.<br>Never compromise on quality<br>with our curated furniture selection.</h1>
                 </div>
 
             </section>
 
-            <section class="product2">
-
-                <div class="product-pencil1-b">
-                    <h1>Draw feelings.</h1>
-                </div>
-                <img src="img/woman2.jpg" alt="sand">
-
+            <section class="productglb">
+                
+                <model-viewer src="glb/Futura.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.12" exposure="1" shadow-softness="0.75" auto-rotate>
+                    <button class="Hotspot" slot="hotspot-1" data-position="1.4216861140181258m 5.84063904751485m -1.719124371758955m" data-normal="0.04121665334222564m 0.6477046266359142m 0.7607758566895363m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">100% Mulberry Silk</div>
+                    </button><button class="Hotspot" slot="hotspot-2" data-position="2.227898162942111m 9.902824342564578m -4.050941318123158m" data-normal="0.34170929893804436m 0.40252584909335715m 0.8492394808479774m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">80% Leather
+                            20% Taffeta fabric</div>
+                    </button><button class="Hotspot" slot="hotspot-3" data-position="3.4284580791367683m 1.4707727730432918m 2.817658449998401m" data-normal="0m 0.01977862532512132m 0.9998043838572865m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">100% Polished Copper</div>
+                    </button>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                </model-viewer>
+                
+                                
+                
             </section>
 
             <section class="optionspencil1-b">
@@ -77,9 +92,9 @@
             <section class="product2">
 
                 <div class="product-pencil1-c">
-                    <h1>With the finest tip on the market.</h1>
+                    <h1>Featuring the market's finest furniture selections.</h1>
                 </div>
-                <img src="img/tip3.png" alt="tip">
+                <img src="img/sand.jpg" alt="tip">
 
             </section>
 
